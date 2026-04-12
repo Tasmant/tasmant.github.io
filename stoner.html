@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stoner — My Reading Log</title>
+  <style>
+    :root {
+      --bg: #faf8f5;
+      --text: #1a1a18;
+      --muted: #888880;
+      --accent: #2e5c3e;
+      --border: #e0ddd8;
+      --max: 640px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Georgia', 'Times New Roman', serif;
+      font-size: 18px;
+      line-height: 1.7;
+      padding: 3rem 1.5rem 6rem;
+    }
+
+    .site-wrap {
+      max-width: var(--max);
+      margin: 0 auto;
+    }
+
+    header {
+      margin-bottom: 3.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      font-weight: normal;
+      letter-spacing: -0.02em;
+    }
+
+    header h1 a {
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    header p {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-top: 0.25rem;
+      font-style: italic;
+    }
+
+    nav {
+      margin-top: 1rem;
+      font-size: 0.88rem;
+      font-family: 'Courier New', monospace;
+    }
+
+    nav a {
+      color: var(--accent);
+      text-decoration: none;
+      margin-right: 1.25rem;
+    }
+
+    nav a:hover { text-decoration: underline; }
+
+    /* Review header */
+    .review-header {
+      margin-bottom: 2rem;
+    }
+
+    .review-header h1 {
+      font-size: 1.9rem;
+      font-weight: normal;
+      letter-spacing: -0.03em;
+      line-height: 1.2;
+    }
+
+    .review-meta {
+      margin-top: 0.6rem;
+      font-family: 'Courier New', monospace;
+      font-size: 0.82rem;
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.5rem;
+    }
+
+    .review-meta .stars { color: var(--accent); }
+
+    /* Review body */
+    .review-body p {
+      margin-bottom: 1.4em;
+    }
+
+    .review-body p:first-child::first-letter {
+      font-size: 3rem;
+      float: left;
+      line-height: 0.8;
+      margin-right: 0.1em;
+      margin-top: 0.05em;
+      color: var(--accent);
+    }
+
+    /* Back link */
+    .back {
+      display: inline-block;
+      margin-top: 3rem;
+      font-family: 'Courier New', monospace;
+      font-size: 0.82rem;
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .back:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 4rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+      font-family: 'Courier New', monospace;
+      border-top: 1px solid var(--border);
+      padding-top: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+<div class="site-wrap">
+
+  <header>
+    <h1><a href="../index.html">My Reading Log</a></h1>
+    <p>Books I've read, with honest thoughts.</p>
+    <nav>
+      <a href="../index.html">home</a>
+      <a href="../about.html">about</a>
+    </nav>
+  </header>
+
+  <article>
+    <div class="review-header">
+      <h1>Stoner</h1>
+      <div class="review-meta">
+        <span>John Williams · 1965</span>
+        <span class="stars">★★★★☆</span>
+        <span>Read: April 2025</span>
+      </div>
+    </div>
+
+    <div class="review-body">
+      <p>
+        This is a novel about a man who teaches literature at a mid-western university, marries the wrong person, and dies quietly. That's it. And somehow it is devastating.
+      </p>
+      <p>
+        William Stoner comes from a farm family, stumbles into a love of literature in college, and never leaves academia. His life contains no great drama — a bad marriage, a brief affair, a petty feud with a colleague. Williams renders all of it with such clear, unhurried prose that the ordinary weight of a life starts to feel immense.
+      </p>
+      <p>
+        I've read that this book was largely ignored when it came out and only found its audience decades later. That feels right, somehow. It's not a book that announces itself. It asks you to slow down and pay attention to the things that don't usually get novels written about them.
+      </p>
+      <p>
+        One star off only because the middle section drags slightly — the departmental conflict with Lomax goes on a bit long. But the final pages are among the best I've read in a while.
+      </p>
+    </div>
+
+    <a class="back" href="../index.html">← back to all reviews</a>
+  </article>
+
+  <footer>
+    <p>made with html &amp; books.</p>
+  </footer>
+
+</div>
+</body>
+</html>
