@@ -3,125 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Books I've read, with honest thoughts." />
   <title>My Reading Log</title>
-  <style>
-    :root {
-      --bg: #faf8f5;
-      --text: #1a1a18;
-      --muted: #888880;
-      --accent: #2e5c3e;
-      --border: #e0ddd8;
-      --max: 640px;
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: 'Georgia', 'Times New Roman', serif;
-      font-size: 18px;
-      line-height: 1.7;
-      padding: 3rem 1.5rem 6rem;
-    }
-
-    .site-wrap {
-      max-width: var(--max);
-      margin: 0 auto;
-    }
-
-    /* Header */
-    header {
-      margin-bottom: 3.5rem;
-      padding-bottom: 1.5rem;
-      border-bottom: 1px solid var(--border);
-    }
-
-    header h1 {
-      font-size: 1.5rem;
-      font-weight: normal;
-      letter-spacing: -0.02em;
-    }
-
-    header h1 a {
-      color: var(--text);
-      text-decoration: none;
-    }
-
-    header p {
-      color: var(--muted);
-      font-size: 0.9rem;
-      margin-top: 0.25rem;
-      font-style: italic;
-    }
-
-    nav {
-      margin-top: 1rem;
-      font-size: 0.88rem;
-      font-family: 'Courier New', monospace;
-    }
-
-    nav a {
-      color: var(--accent);
-      text-decoration: none;
-      margin-right: 1.25rem;
-    }
-
-    nav a:hover { text-decoration: underline; }
-
-    /* Book list */
-    .book-list { list-style: none; }
-
-    .book-list li {
-      padding: 1.1rem 0;
-      border-bottom: 1px solid var(--border);
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      gap: 1rem;
-    }
-
-    .book-list a {
-      color: var(--text);
-      text-decoration: none;
-      font-size: 1rem;
-    }
-
-    .book-list a:hover {
-      color: var(--accent);
-    }
-
-    .book-list .meta {
-      color: var(--muted);
-      font-size: 0.8rem;
-      font-family: 'Courier New', monospace;
-      white-space: nowrap;
-      flex-shrink: 0;
-    }
-
-    .stars {
-      color: var(--accent);
-      font-size: 0.75rem;
-      letter-spacing: 0.05em;
-    }
-
-    /* Section label */
-    h2.section-label {
-      font-size: 0.78rem;
-      font-family: 'Courier New', monospace;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--muted);
-      margin-bottom: 0.5rem;
-    }
-
-    footer {
-      margin-top: 4rem;
-      font-size: 0.8rem;
-      color: var(--muted);
-      font-family: 'Courier New', monospace;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 <div class="site-wrap">
@@ -139,15 +23,7 @@
     <h2 class="section-label">Reviews</h2>
     <ul class="book-list">
 
-      <!-- Most recent review first. Copy/paste this <li> block to add new reviews. -->
-
-      <li>
-        <span>
-          <a href="reviews/the-left-hand-of-darkness.html">The Left Hand of Darkness</a>
-          <br><span class="stars">★★★★★</span>
-        </span>
-        <span class="meta">Jun 2025</span>
-      </li>
+      <!-- Copy/paste a <li> block below to add new reviews. Most recent first. -->
 
       <li>
         <span>
@@ -155,14 +31,6 @@
           <br><span class="stars">★★★★☆</span>
         </span>
         <span class="meta">Apr 2025</span>
-      </li>
-
-      <li>
-        <span>
-          <a href="reviews/the-dispossessed.html">The Dispossessed</a>
-          <br><span class="stars">★★★★★</span>
-        </span>
-        <span class="meta">Feb 2025</span>
       </li>
 
     </ul>
