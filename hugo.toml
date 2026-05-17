@@ -1,0 +1,4 @@
+baseURL = "https://TON-USERNAME.github.io/"
+languageCode = "fr"
+title = "Killian Paul's Webpage"
+theme = "hugo-bearblog"
