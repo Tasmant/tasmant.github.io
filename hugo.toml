@@ -1,4 +1,23 @@
-baseURL = "https://TON-USERNAME.github.io/"
+baseURL = "https://tasmant.github.io/"
 languageCode = "fr"
 title = "Killian Paul's Webpage"
 theme = "hugo-bearblog"
+
+[params]
+  favicon = ""
+  description = "Réflexions sur la musique, les livres et les jeux vidéo"
+  darkTheme = true
+
+[menu]
+  [[menu.main]]
+    name = "📚 Livres"
+    url = "/livres/"
+    weight = 1
+  [[menu.main]]
+    name = "🎵 Musique"
+    url = "/musique/"
+    weight = 2
+  [[menu.main]]
+    name = "🎮 Jeux vidéo"
+    url = "/jeuxvideo/"
+    weight = 3
