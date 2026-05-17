@@ -1,23 +1,41 @@
 baseURL = "https://tasmant.github.io/"
-languageCode = "fr"
+languageCode = "en"
 title = "Killian Paul's Webpage"
-theme = "hugo-bearblog"
+theme = "PaperMod"
 
 [params]
-  favicon = ""
-  description = "Réflexions sur la musique, les livres et les jeux vidéo"
-  darkTheme = true
+  defaultTheme = "dark"
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    weight = 1
+  [languages.fr]
+    languageName = "Français"
+    weight = 2
 
 [menu]
-  [[menu.main]]
-    name = "📚 Livres"
-    url = "/livres/"
+  [[languages.en.menu.main]]
+    name = "📚 Books"
+    url = "/en/books/"
     weight = 1
-  [[menu.main]]
-    name = "🎵 Musique"
-    url = "/musique/"
+  [[languages.en.menu.main]]
+    name = "🎵 Music"
+    url = "/en/music/"
     weight = 2
-  [[menu.main]]
+  [[languages.en.menu.main]]
+    name = "🎮 Videogames"
+    url = "/en/videogames/"
+    weight = 3
+  [[languages.fr.menu.main]]
+    name = "📚 Livres"
+    url = "/fr/livres/"
+    weight = 1
+  [[languages.fr.menu.main]]
+    name = "🎵 Musique"
+    url = "/fr/musique/"
+    weight = 2
+  [[languages.fr.menu.main]]
     name = "🎮 Jeux vidéo"
-    url = "/jeuxvideo/"
+    url = "/fr/jeuxvideo/"
     weight = 3
