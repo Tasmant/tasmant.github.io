@@ -1,7 +1,9 @@
 baseURL = "https://tasmant.github.io/"
-languageCode = "en"
 title = "Killian Paul's Webpage"
 theme = "PaperMod"
+
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
 
 [params]
   defaultTheme = "dark"
@@ -10,23 +12,27 @@ theme = "PaperMod"
   [languages.en]
     languageName = "English"
     weight = 1
+    contentDir = "content/en"
   [languages.fr]
     languageName = "Français"
     weight = 2
+    contentDir = "content/fr"
 
-[menu]
+[languages.en.menu]
   [[languages.en.menu.main]]
     name = "📚 Books"
-    url = "/en/books/"
+    url = "/books/"
     weight = 1
   [[languages.en.menu.main]]
     name = "🎵 Music"
-    url = "/en/music/"
+    url = "/music/"
     weight = 2
   [[languages.en.menu.main]]
     name = "🎮 Videogames"
-    url = "/en/videogames/"
+    url = "/videogames/"
     weight = 3
+
+[languages.fr.menu]
   [[languages.fr.menu.main]]
     name = "📚 Livres"
     url = "/fr/livres/"
