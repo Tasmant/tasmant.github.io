@@ -1,22 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Blog</title>
-  <meta name="description" content="Thoughts on music, books, and videogames">
+  <title>Mon Blog</title>
   <link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura-dark.css">
 </head>
 <body>
-  <h1>My Blog</h1>
-  <nav>
-  <a href="books.html">📚 Books</a> ·
-  <a href="music.html">🎵 Music</a> ·
-  <a href="videogames.html">🎮 Videogames</a>
-</nav>
 
-  <hr>
-  <p>Welcome to my blog.</p>
+  <button onclick="setLang('fr')">🇫🇷 Français</button>
+  <button onclick="setLang('en')">🇬🇧 English</button>
+
+  <div class="fr">
+    <h1>Mon Blog</h1>
+    <nav>
+      <a href="livres.html">📚 Livres</a> ·
+      <a href="musique.html">🎵 Musique</a> ·
+      <a href="jeuxvideo.html">🎮 Jeux vidéo</a>
+    </nav>
+    <p>Bienvenue sur mon blog.</p>
+  </div>
+
+  <div class="en" style="display:none">
+    <h1>My Blog</h1>
+    <nav>
+      <a href="books.html">📚 Books</a> ·
+      <a href="music.html">🎵 Music</a> ·
+      <a href="videogames.html">🎮 Videogames</a>
+    </nav>
+    <p>Welcome to my blog.</p>
+  </div>
+
+  <script>
+    function setLang(lang) {
+      document.querySelectorAll('.fr, .en').forEach(el => el.style.display = 'none');
+      document.querySelectorAll('.' + lang).forEach(el => el.style.display = '');
+    }
+  </script>
 
 </body>
 </html>
